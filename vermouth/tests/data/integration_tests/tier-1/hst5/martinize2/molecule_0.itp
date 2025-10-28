@@ -1,14 +1,14 @@
 ; This file was generated using the following command:
 ; /coarse/chris/python_packages/vermouth_dev/vermouth-martinize/venv/bin/martinize2 -f ../aa.pdb -ff martini3001 -x cg.pdb -o topol.top -ss C -id-regions 1:24 -noscfix
-; martinize with vermouth 0.15.1.dev1
+; martinize with vermouth 0.15.1.dev3
 ; The following sequence of secondary structure 
 ; was used for the full system:
 ; CCCCCCCCCCCCCCCCCCCCCCCC
 
 ; Please cite the following papers:
-; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
 ; Kroon, P C; Grunewald, F; Barnoud, J; van Tilburg, M; Souza, P C; Wassenaar, T A; Marrink, S J;  elife 2024; 10.7554/elife.90627.2
 ; Wang, L; Brasnett, C; Borges-Araújo, L; Souza, P C T; Marrink, S J;  Nature Communications 2025; https://doi.org/10.1038/s41467-025-58199-2
+; Souza, P C T; Alessandri, R; Barnoud, J; Thallmair, S; Faustino, I; Grünewald, F; Patmanidis, I; Abdizadeh, H; Bruininks, B M H; Wassenaar, T A; Kroon, P C; Melcr, J; Nieto, V; Corradi, V; Khan, H M; Domański, J; Javanainen, M; Martinez-Seara, H; Reuter, N; Best, R B; Vattulainen, I; Monticelli, L; Periole, X; Tieleman, D P; de Vries, A H; Marrink, S J;  Nature Methods 2021; 10.1038/s41592-021-01098-3
 
 [ moleculetype ]
 molecule_0 1
@@ -91,30 +91,30 @@ molecule_0 1
 75 TN6  24 TYR SC4 75  0.0 
 
 [ bonds ]
-; Backbone bonds
- 1  3 1 0.350 4000
- 3  5 1 0.350 4000
- 5  9 1 0.350 4000
- 9 11 1 0.350 4000
-11 14 1 0.350 4000
-14 17 1 0.350 4000
-17 21 1 0.350 4000
-21 25 1 0.350 4000
-25 26 1 0.350 4000
-26 31 1 0.350 4000
-31 34 1 0.350 4000
-34 37 1 0.350 4000
-37 40 1 0.350 4000
-40 44 1 0.350 4000
-44 48 1 0.350 4000
-48 50 1 0.350 4000
-50 53 1 0.350 4000
-53 57 1 0.350 4000
-57 61 1 0.350 4000
-61 63 1 0.350 4000
-63 67 1 0.350 4000
-67 70 1 0.350 4000
-70 71 1 0.350 4000
+; Backbone bonds IDP
+ 1  3 1 0.360 8000 ; BB-BB IDR
+ 3  5 1 0.360 8000 ; BB-BB IDR
+ 5  9 1 0.360 8000 ; BB-BB IDR
+ 9 11 1 0.360 8000 ; BB-BB IDR
+11 14 1 0.360 8000 ; BB-BB IDR
+14 17 1 0.360 8000 ; BB-BB IDR
+17 21 1 0.360 8000 ; BB-BB IDR
+21 25 1 0.360 8000 ; BB-BB IDR
+25 26 1 0.360 8000 ; BB-BB IDR
+26 31 1 0.360 8000 ; BB-BB IDR
+31 34 1 0.360 8000 ; BB-BB IDR
+34 37 1 0.360 8000 ; BB-BB IDR
+37 40 1 0.360 8000 ; BB-BB IDR
+40 44 1 0.360 8000 ; BB-BB IDR
+44 48 1 0.360 8000 ; BB-BB IDR
+48 50 1 0.360 8000 ; BB-BB IDR
+50 53 1 0.360 8000 ; BB-BB IDR
+53 57 1 0.360 8000 ; BB-BB IDR
+57 61 1 0.360 8000 ; BB-BB IDR
+61 63 1 0.360 8000 ; BB-BB IDR
+63 67 1 0.360 8000 ; BB-BB IDR
+67 70 1 0.360 8000 ; BB-BB IDR
+70 71 1 0.360 8000 ; BB-BB IDR
 
 ; Side chain bonds
  1  2 1 0.352 7500
@@ -226,55 +226,75 @@ molecule_0 1
 #endif
 
 [ angles ]
-; BBB angles
- 1  3  5 10 127 20
- 3  5  9 10 127 20
- 5  9 11 10 127 20
- 9 11 14 10 127 20
-11 14 17 10 127 20
-14 17 21 10 127 20
-17 21 25 10 127 20
-21 25 26 10 127 20
-25 26 31 10 127 20
-26 31 34 10 127 20
-31 34 37 10 127 20
-34 37 40 10 127 20
-37 40 44 10 127 20
-40 44 48 10 127 20
-44 48 50 10 127 20
-48 50 53 10 127 20
-50 53 57 10 127 20
-53 57 61 10 127 20
-57 61 63 10 127 20
-61 63 67 10 127 20
-63 67 70 10 127 20
-67 70 71 10 127 20
+; BBB angles IDP
+ 1  3  5 10 137 25
+ 3  5  9 10 137 25
+ 5  9 11 10 137 25
+ 9 11 14 10 137 25
+11 14 17 10 137 25
+14 17 21 10 137 25
+17 21 25 10 137 25
+21 25 26 10 137 25
+25 26 31 10 137 25
+26 31 34 10 137 25
+31 34 37 10 137 25
+34 37 40 10 137 25
+37 40 44 10 137 25
+40 44 48 10 137 25
+44 48 50 10 137 25
+48 50 53 10 137 25
+50 53 57 10 137 25
+53 57 61 10 137 25
+57 61 63 10 137 25
+61 63 67 10 137 25
+63 67 70 10 137 25
+67 70 71 10 137 25
 
-; BBS angles regular martini
- 1  3  4 2 100 25
- 3  5  6 2 100 25
- 5  9 10 2 100 25
- 9 11 12 2 100 25
-11 14 15 2 100 25
-14 17 18 2 100 25
-17 21 22 2 100 25
-25 26 27 2 100 25
-26 31 32 2 100 25
-31 34 35 2 100 25
-34 37 38 2 100 25
-37 40 41 2 100 25
-40 44 45 2 100 25
-44 48 49 2 100 25
-48 50 51 2 100 25
-50 53 54 2 100 25
-53 57 58 2 100 25
-57 61 62 2 100 25
-61 63 64 2 100 25
-63 67 68 2 100 25
-70 71 72 2 100 25
+; BBS angles
+ 1  3  4 10 110 15 ; IDP residue specific
+ 3  5  6 10 100 15 ; IDP residue specific
+ 5  9 10 10 110 15 ; IDP residue specific
+ 9 11 12 10 100 15 ; IDP residue specific
+11 14 15 10 90 15 ; IDP residue specific
+14 17 18 10 100 15 ; IDP residue specific
+17 21 22 10 100 15 ; IDP residue specific
+25 26 27 10 100 15 ; IDP residue specific
+26 31 32 10 100 15 ; IDP residue specific
+31 34 35 10 90 15 ; IDP residue specific
+34 37 38 10 100 15 ; IDP residue specific
+37 40 41 10 100 15 ; IDP residue specific
+40 44 45 10 100 15 ; IDP residue specific
+44 48 49 10 100 15 ; IDP residue specific
+48 50 51 10 100 15 ; IDP residue specific
+50 53 54 10 100 15 ; IDP residue specific
+53 57 58 10 100 15 ; IDP residue specific
+57 61 62 10 110 15 ; IDP residue specific
+61 63 64 10 100 15 ; IDP residue specific
+63 67 68 10 90 15 ; IDP residue specific
+70 71 72 10 100 15 ; IDP residue specific
 
-; First SBB regular martini
- 2  1  3 2 100 25
+; SBB angles
+ 2  1  3 10 90 15 ; IDP residue specific
+ 4  3  5 10 70 15 ; IDP residue specific
+ 6  5  9 10 90 15 ; IDP residue specific
+10  9 11 10 75 15 ; IDP residue specific
+12 11 14 10 90 15 ; IDP residue specific
+15 14 17 10 90 15 ; IDP residue specific
+18 17 21 10 90 15 ; IDP residue specific
+22 21 25 10 90 15 ; IDP residue specific
+27 26 31 10 90 15 ; IDP residue specific
+32 31 34 10 90 15 ; IDP residue specific
+35 34 37 10 90 15 ; IDP residue specific
+38 37 40 10 90 15 ; IDP residue specific
+41 40 44 10 90 15 ; IDP residue specific
+45 44 48 10 90 15 ; IDP residue specific
+49 48 50 10 90 15 ; IDP residue specific
+51 50 53 10 90 15 ; IDP residue specific
+54 53 57 10 90 15 ; IDP residue specific
+58 57 61 10 90 15 ; IDP residue specific
+62 61 63 10 70 15 ; IDP residue specific
+64 63 67 10 90 15 ; IDP residue specific
+68 67 70 10 90 15 ; IDP residue specific
 
 ; Side chain angles
  5  6  7 2 120.000 50.0
@@ -305,159 +325,119 @@ molecule_0 1
 71 72 73 2 120.000 60.0
 71 72 74 2 120.000 60.0
 
-; idp-fix
- 2  1  3 10 85 10
- 1  3  4 10 85 10
- 4  3  5 10 85 10
- 3  5  6 10 85 10
- 6  5  9 10 85 10
- 5  9 10 10 85 10
-10  9 11 10 85 10
- 9 11 12 10 85 10
-12 11 14 10 85 10
-11 14 15 10 85 10
-15 14 17 10 85 10
-14 17 18 10 85 10
-18 17 21 10 85 10
-17 21 22 10 85 10
-22 21 25 10 85 10
-25 26 27 10 85 10
-27 26 31 10 85 10
-26 31 32 10 85 10
-32 31 34 10 85 10
-31 34 35 10 85 10
-35 34 37 10 85 10
-34 37 38 10 85 10
-38 37 40 10 85 10
-37 40 41 10 85 10
-41 40 44 10 85 10
-40 44 45 10 85 10
-45 44 48 10 85 10
-44 48 49 10 85 10
-49 48 50 10 85 10
-48 50 51 10 85 10
-51 50 53 10 85 10
-50 53 54 10 85 10
-54 53 57 10 85 10
-53 57 58 10 85 10
-58 57 61 10 85 10
-57 61 62 10 85 10
-62 61 63 10 85 10
-61 63 64 10 85 10
-64 63 67 10 85 10
-63 67 68 10 85 10
-68 67 70 10 85 10
-70 71 72 10 85 10
-
 [ dihedrals ]
 ; idp-BBBB
+ 1  3  5  9 9 60 2.8 1 ; BBBB-v1
+ 1  3  5  9 9 150 -0.60 1 ; BBBB-v2
  1  3  5  9 9 130 -1.20 2 ; BBBB-v3
+ 3  5  9 11 9 60 2.8 1 ; BBBB-v1
+ 3  5  9 11 9 150 -0.60 1 ; BBBB-v2
  3  5  9 11 9 130 -1.20 2 ; BBBB-v3
+ 5  9 11 14 9 60 2.8 1 ; BBBB-v1
+ 5  9 11 14 9 150 -0.60 1 ; BBBB-v2
  5  9 11 14 9 130 -1.20 2 ; BBBB-v3
+ 9 11 14 17 9 60 2.8 1 ; BBBB-v1
+ 9 11 14 17 9 150 -0.60 1 ; BBBB-v2
  9 11 14 17 9 130 -1.20 2 ; BBBB-v3
+11 14 17 21 9 60 2.8 1 ; BBBB-v1
+11 14 17 21 9 150 -0.60 1 ; BBBB-v2
 11 14 17 21 9 130 -1.20 2 ; BBBB-v3
+14 17 21 25 9 60 2.8 1 ; BBBB-v1
+14 17 21 25 9 150 -0.60 1 ; BBBB-v2
 14 17 21 25 9 130 -1.20 2 ; BBBB-v3
+17 21 25 26 9 60 2.8 1 ; BBBB-v1
+17 21 25 26 9 150 -0.60 1 ; BBBB-v2
 17 21 25 26 9 130 -1.20 2 ; BBBB-v3
+21 25 26 31 9 60 2.8 1 ; BBBB-v1
+21 25 26 31 9 150 -0.60 1 ; BBBB-v2
 21 25 26 31 9 130 -1.20 2 ; BBBB-v3
+25 26 31 34 9 60 2.8 1 ; BBBB-v1
+25 26 31 34 9 150 -0.60 1 ; BBBB-v2
 25 26 31 34 9 130 -1.20 2 ; BBBB-v3
+26 31 34 37 9 60 2.8 1 ; BBBB-v1
+26 31 34 37 9 150 -0.60 1 ; BBBB-v2
 26 31 34 37 9 130 -1.20 2 ; BBBB-v3
+31 34 37 40 9 60 2.8 1 ; BBBB-v1
+31 34 37 40 9 150 -0.60 1 ; BBBB-v2
 31 34 37 40 9 130 -1.20 2 ; BBBB-v3
+34 37 40 44 9 60 2.8 1 ; BBBB-v1
+34 37 40 44 9 150 -0.60 1 ; BBBB-v2
 34 37 40 44 9 130 -1.20 2 ; BBBB-v3
+37 40 44 48 9 60 2.8 1 ; BBBB-v1
+37 40 44 48 9 150 -0.60 1 ; BBBB-v2
 37 40 44 48 9 130 -1.20 2 ; BBBB-v3
+40 44 48 50 9 60 2.8 1 ; BBBB-v1
+40 44 48 50 9 150 -0.60 1 ; BBBB-v2
 40 44 48 50 9 130 -1.20 2 ; BBBB-v3
+44 48 50 53 9 60 2.8 1 ; BBBB-v1
+44 48 50 53 9 150 -0.60 1 ; BBBB-v2
 44 48 50 53 9 130 -1.20 2 ; BBBB-v3
+48 50 53 57 9 60 2.8 1 ; BBBB-v1
+48 50 53 57 9 150 -0.60 1 ; BBBB-v2
 48 50 53 57 9 130 -1.20 2 ; BBBB-v3
+50 53 57 61 9 60 2.8 1 ; BBBB-v1
+50 53 57 61 9 150 -0.60 1 ; BBBB-v2
 50 53 57 61 9 130 -1.20 2 ; BBBB-v3
+53 57 61 63 9 60 2.8 1 ; BBBB-v1
+53 57 61 63 9 150 -0.60 1 ; BBBB-v2
 53 57 61 63 9 130 -1.20 2 ; BBBB-v3
+57 61 63 67 9 60 2.8 1 ; BBBB-v1
+57 61 63 67 9 150 -0.60 1 ; BBBB-v2
 57 61 63 67 9 130 -1.20 2 ; BBBB-v3
+61 63 67 70 9 60 2.8 1 ; BBBB-v1
+61 63 67 70 9 150 -0.60 1 ; BBBB-v2
 61 63 67 70 9 130 -1.20 2 ; BBBB-v3
+63 67 70 71 9 60 2.8 1 ; BBBB-v1
+63 67 70 71 9 150 -0.60 1 ; BBBB-v2
 63 67 70 71 9 130 -1.20 2 ; BBBB-v3
 
-; idp-fix
- 1  3  5  9 9 -120 -1 1 ; BB-BB-BB-BB-v1
- 1  3  5  9 9 -120 -1 2 ; BB-BB-BB-BB-v2
- 2  1  3  4 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
- 2  1  3  4 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
- 3  5  9 11 9 -120 -1 1 ; BB-BB-BB-BB-v1
- 3  5  9 11 9 -120 -1 2 ; BB-BB-BB-BB-v2
- 4  3  5  6 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
- 4  3  5  6 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
- 5  9 11 14 9 -120 -1 1 ; BB-BB-BB-BB-v1
- 5  9 11 14 9 -120 -1 2 ; BB-BB-BB-BB-v2
- 6  5  9 10 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
- 6  5  9 10 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
- 9 11 14 17 9 -120 -1 1 ; BB-BB-BB-BB-v1
- 9 11 14 17 9 -120 -1 2 ; BB-BB-BB-BB-v2
-10  9 11 12 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-10  9 11 12 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-11 14 17 21 9 -120 -1 1 ; BB-BB-BB-BB-v1
-11 14 17 21 9 -120 -1 2 ; BB-BB-BB-BB-v2
-12 11 14 15 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-12 11 14 15 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-14 17 21 25 9 -120 -1 1 ; BB-BB-BB-BB-v1
-14 17 21 25 9 -120 -1 2 ; BB-BB-BB-BB-v2
-15 14 17 18 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-15 14 17 18 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-17 21 25 26 9 -120 -1 1 ; BB-BB-BB-BB-v1
-17 21 25 26 9 -120 -1 2 ; BB-BB-BB-BB-v2
-18 17 21 22 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-18 17 21 22 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-21 25 26 27 1 0 -2.0 1 ; BB-BB(GLY)-BB-SC1
-21 25 26 31 9 -120 -1 1 ; BB-BB-BB-BB-v1
-21 25 26 31 9 -120 -1 2 ; BB-BB-BB-BB-v2
-22 21 25 26 1 115 -4.5 1 ; SC1-BB-BB(GLY)-BB
-25 26 31 34 9 -120 -1 1 ; BB-BB-BB-BB-v1
-25 26 31 34 9 -120 -1 2 ; BB-BB-BB-BB-v2
-26 31 34 37 9 -120 -1 1 ; BB-BB-BB-BB-v1
-26 31 34 37 9 -120 -1 2 ; BB-BB-BB-BB-v2
-27 26 31 32 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-27 26 31 32 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-31 34 37 40 9 -120 -1 1 ; BB-BB-BB-BB-v1
-31 34 37 40 9 -120 -1 2 ; BB-BB-BB-BB-v2
-32 31 34 35 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-32 31 34 35 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-34 37 40 44 9 -120 -1 1 ; BB-BB-BB-BB-v1
-34 37 40 44 9 -120 -1 2 ; BB-BB-BB-BB-v2
-35 34 37 38 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-35 34 37 38 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-37 40 44 48 9 -120 -1 1 ; BB-BB-BB-BB-v1
-37 40 44 48 9 -120 -1 2 ; BB-BB-BB-BB-v2
-38 37 40 41 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-38 37 40 41 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-40 44 48 50 9 -120 -1 1 ; BB-BB-BB-BB-v1
-40 44 48 50 9 -120 -1 2 ; BB-BB-BB-BB-v2
-41 40 44 45 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-41 40 44 45 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-44 48 50 53 9 -120 -1 1 ; BB-BB-BB-BB-v1
-44 48 50 53 9 -120 -1 2 ; BB-BB-BB-BB-v2
-45 44 48 49 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-45 44 48 49 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-48 50 53 57 9 -120 -1 1 ; BB-BB-BB-BB-v1
-48 50 53 57 9 -120 -1 2 ; BB-BB-BB-BB-v2
-49 48 50 51 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-49 48 50 51 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-50 53 57 61 9 -120 -1 1 ; BB-BB-BB-BB-v1
-50 53 57 61 9 -120 -1 2 ; BB-BB-BB-BB-v2
-51 50 53 54 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-51 50 53 54 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-53 57 61 63 9 -120 -1 1 ; BB-BB-BB-BB-v1
-53 57 61 63 9 -120 -1 2 ; BB-BB-BB-BB-v2
-54 53 57 58 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-54 53 57 58 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-57 61 63 67 9 -120 -1 1 ; BB-BB-BB-BB-v1
-57 61 63 67 9 -120 -1 2 ; BB-BB-BB-BB-v2
-58 57 61 62 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-58 57 61 62 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-61 63 67 70 9 -120 -1 1 ; BB-BB-BB-BB-v1
-61 63 67 70 9 -120 -1 2 ; BB-BB-BB-BB-v2
-62 61 63 64 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-62 61 63 64 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-63 67 70 71 9 -120 -1 1 ; BB-BB-BB-BB-v1
-63 67 70 71 9 -120 -1 2 ; BB-BB-BB-BB-v2
-64 63 67 68 9 -130 -1.5 1 ; SC1-BB-BB-SC1-v1
-64 63 67 68 9 100 -1.5 2 ; SC1-BB-BB-SC1-v2
-67 70 71 72 1 0 -2.0 1 ; BB-BB(GLY)-BB-SC1
-68 67 70 71 1 115 -4.5 1 ; SC1-BB-BB(GLY)-BB
+; idp-fix-BB-BB(GLY)-BB-SC1
+21 25 26 27 9 -10 3.2 1 ; BB-BB(GLY)-BB-SC1-v1
+21 25 26 27 9 15 -1.3 2 ; BB-BB(GLY)-BB-SC1-v2
+21 25 26 27 9 -120 0.8 1 ; BB-BB(GLY)-BB-SC1-v3
+67 70 71 72 9 -10 3.2 1 ; BB-BB(GLY)-BB-SC1-v1
+67 70 71 72 9 15 -1.3 2 ; BB-BB(GLY)-BB-SC1-v2
+67 70 71 72 9 -120 0.8 1 ; BB-BB(GLY)-BB-SC1-v3
+
+; idp-fix-SC1-BB-BB-SC1
+ 2  1  3  4 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+ 2  1  3  4 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+ 4  3  5  6 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+ 4  3  5  6 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+ 6  5  9 10 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+ 6  5  9 10 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+10  9 11 12 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+10  9 11 12 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+12 11 14 15 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+12 11 14 15 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+15 14 17 18 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+15 14 17 18 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+18 17 21 22 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+18 17 21 22 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+27 26 31 32 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+27 26 31 32 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+32 31 34 35 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+32 31 34 35 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+35 34 37 38 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+35 34 37 38 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+38 37 40 41 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+38 37 40 41 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+41 40 44 45 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+41 40 44 45 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+45 44 48 49 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+45 44 48 49 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+49 48 50 51 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+49 48 50 51 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+51 50 53 54 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+51 50 53 54 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+54 53 57 58 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+54 53 57 58 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+58 57 61 62 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+58 57 61 62 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+62 61 63 64 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+62 61 63 64 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
+64 63 67 68 9 -130 -1.4 1 ; SC1-BB-BB-SC1-v1
+64 63 67 68 9 100 -1.4 2 ; SC1-BB-BB-SC1-v2
 
 [ exclusions ]
  5  6  7  8 
