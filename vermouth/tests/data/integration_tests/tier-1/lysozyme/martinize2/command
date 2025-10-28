@@ -6,3 +6,4 @@ martinize2
 -elastic
 -dssp
 -ignore HOH
+-ef 500
